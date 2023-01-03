@@ -1,39 +1,39 @@
 const Employee = require('../lib/employee');
 const employee = new Employee (24, 'Vijithiran', 'vijithiran_navajeevayokan@hotmail.com')
 
-test('id', () => {
+describe('id', () => {
     it('should return employee object with Id', () => {
-        expect(employee.id).toEqual(24);
+        expect(employee.id).toBe(24);
     });
 });
-test('name', () => {
+describe('name', () => {
     it('should return employee object with name', () => {
-        expect(employee.name).toEqual('Vijithiran');
+        expect(employee.name).toBe('Vijithiran');
     });
 });
-test('email', () => {
+describe('email', () => {
     it('should return employee object with email', () => {
-        expect(employee.email).toEqual('vijithiran_navajeevayokan@hotmail.com');
+        expect(employee.email).toBe('vijithiran_navajeevayokan@hotmail.com');
     });
 });
-test('getId', () => {
+describe('getId', () => {
     it('should return employee Id', () => {
-        expect(employee.getId()).toEqual('24');
+        expect(employee.getId()).toBe('24');
     });
 });
-test('getName', () => {
+describe('getName', () => {
     it('should return employee name', () => {
-        expect(employee.getName()).toEqual('Vijithiran');
+        expect(employee.getName()).toBe('Vijithiran');
     });
 });
-test('getEmail', () => {
+describe('getEmail', () => {
     it('should return employee email', () => {
-        expect(employee.getEmail()).toEqual('vijithiran_navajeevayokan@hotmail.com');
+        expect(employee.getEmail()).toBe('vijithiran_navajeevayokan@hotmail.com');
     });
 });
-test('getRole', () => {
+describe('getRole', () => {
     it('should return role of Employee', () => {
-        expect(employee.getRole()).toEqual('Employee');
+        expect(employee.getRole()).toBe('Employee');
     });
 })
 

@@ -1,33 +1,33 @@
 const Intern = require('../lib/intern');
 const intern = new Intern (10, 'Kobe', 'internkobe@gmail.com', 'UofTScarb');
 
-test('id', () => {
+decribe('id', () => {
     it('should return intern object with Id', () => {
-        expect(intern.id).toEqual(10);
+        expect(intern.id).toBe(10);
     });
 });
-test('name', () => {
+decribe('name', () => {
     it('should return intern object with name', () => {
-        expect(intern.name).toEqual('Kobe');
+        expect(intern.name).toBe('Kobe');
     });
 });
-test('email', () => {
+decribe('email', () => {
     it('should return intern object with email', () => {
-        expect(intern.email).toEqual('internkobe@gmail.com');
+        expect(intern.email).toBe('internkobe@gmail.com');
     });
 });
-test('school', () => {
+decribe('school', () => {
     it('should return school where the intern attended', () => {
-        expect(intern.school).toEqual('UofTScarb');
+        expect(intern.school).toBe('UofTScarb');
     });
 });
-test('getSchool', () => {
+decribe('getSchool', () => {
     it('should return the current school the intern is at', () => {
-        expect(intern.getSchoolName()).toEqual('UofTScarb');
+        expect(intern.getSchoolName()).toBe('UofTScarb');
     });
 });
-test('getRole', () => {
+decribe('getRole', () => {
     it('should return role of intern', () => {
-        expect(intern.getRole()).toEqual('Intern');
+        expect(intern.getRole()).toBe('Intern');
     });
 })

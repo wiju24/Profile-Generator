@@ -1,33 +1,33 @@
 const Manager = require('../lib/intern');
 const manager = new Manager (23, 'Jordan', 'managerjordan@gmail.com', '2323');
 
-test('id', () => {
+describe('id', () => {
     it('should return manager object with Id', () => {
-        expect(manager.id).toEqual(23);
+        expect(manager.id).toBe(23);
     });
 });
-test('name', () => {
+describe('name', () => {
     it('should return manager object with name', () => {
-        expect(manager.name).toEqual('Jordan');
+        expect(manager.name).toBe('Jordan');
     });
 });
-test('email', () => {
+describe('email', () => {
     it('should return manager object with email', () => {
-        expect(manager.email).toEqual('managerjordan@gmail.com');
+        expect(manager.email).toBe('managerjordan@gmail.com');
     });
 });
-test('office room number', () => {
+describe('office room number', () => {
     it('should return the room number of the Manager', () => {
-        expect(manager.roomNumber).toEqual('2424');
+        expect(manager.roomNumber).toBe('2424');
     });
 });
-test('getRoomNumber', () => {
-    it('should return the current school the intern is at', () => {
-        expect(manager.getRoomNumber()).toEqual('2424');
+describe('getRoomNumber', () => {
+    it('should return the current room number the Manager is at', () => {
+        expect(manager.getRoomNumber()).toBe('2424');
     });
 });
-test('getRole', () => {
+describe('getRole', () => {
     it('should return role of Manager', () => {
-        expect(manager.getRole()).toEqual('Manager');
+        expect(manager.getRole()).toBe('Manager');
     });
 })
