@@ -1,33 +1,33 @@
 const Engineer = require('../lib/engineer');
 const engineer = new Engineer(8, 'Steve', 'engineersteve@gmail.com', 'wiju24');
 
-test('id', () => {
+describe('id', () => {
     it('should return engineer object with Id', () => {
-        expect(engineer.id).toEqual(8);
+        expect(engineer.id).toBe(8);
     });
 });
-test('name', () => {
+describe('name', () => {
     it('should return engineer object with name', () => {
-        expect(engineer.name).toEqual('Steve');
+        expect(engineer.name).toBe('Steve');
     });
 });
-test('email', () => {
+describe('email', () => {
     it('should return engineer object with email', () => {
-        expect(engineer.email).toEqual('engineersteve@gmail.com');
+        expect(engineer.email).toBe('engineersteve@gmail.com');
     });
 });
-test('pullGithubAccount', () => {
+describe('pullGithubAccount', () => {
     it('should return engineer object with username for Github', () => {
-        expect(engineer.github).toEqual('wiju24');
+        expect(engineer.github).toBe('wiju24');
     });
 });
-test('getGithubLink', () => {
+describe('getGithubLink', () => {
     it('should return username from Github', () => {
-        expect(engineer.pullGithubAccount()).toEqual('https://github.com/wiju24');
+        expect(engineer.pullGithubAccount()).toBe('https://github.com/wiju24');
     });
 });
-test('getRole', () => {
+describe('getRole', () => {
     it('should return role of Engineer', () => {
-        expect(engineer.getRole()).toEqual('Engineer');
+        expect(engineer.getRole()).toBe('Engineer');
     });
 })
