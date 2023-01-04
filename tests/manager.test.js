@@ -1,5 +1,5 @@
-const Manager = require('../lib/intern');
-const manager = new Manager (23, 'Jordan', 'managerjordan@gmail.com', '2323');
+const Manager = require('../lib/manager');
+const manager = new Manager (23, 'Jordan', 'managerjordan@gmail.com', 2323);
 
 describe('id', () => {
     it('should return manager object with Id', () => {
@@ -18,12 +18,12 @@ describe('email', () => {
 });
 describe('office room number', () => {
     it('should return the room number of the Manager', () => {
-        expect(manager.roomNumber).toBe('2424');
+        expect(manager.roomNumber).toBe(2323);
     });
 });
 describe('getRoomNumber', () => {
     it('should return the current room number the Manager is at', () => {
-        expect(manager.getRoomNumber()).toBe('2424');
+        expect(manager.getRoomNumber()).toBe(2323);
     });
 });
 describe('getRole', () => {

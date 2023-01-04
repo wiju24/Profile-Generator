@@ -23,7 +23,7 @@ describe('pullGithubAccount', () => {
 });
 describe('getGithubLink', () => {
     it('should return username from Github', () => {
-        expect(engineer.pullGithubAccount()).toBe('https://github.com/wiju24');
+        expect(engineer.pullGithubAccount()).toBe('wiju24');
     });
 });
 describe('getRole', () => {
